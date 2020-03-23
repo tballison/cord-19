@@ -69,13 +69,7 @@
       },
       {
         "f":"dcterms:created",
-        "t":"created",
-        "capture": {
-          "find": "^(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T",
-          "replace": "$1$2$3",
-          "fail_policy": "skip"
-        }
-
+        "t":"created"
       },
 	  {
 	    "f":"X-TIKA:embedded_resource_path",

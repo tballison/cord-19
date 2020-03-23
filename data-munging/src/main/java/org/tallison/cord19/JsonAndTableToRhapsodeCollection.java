@@ -78,7 +78,9 @@ public class JsonAndTableToRhapsodeCollection {
             root = JsonParser.parseReader(reader);
         }
         List<String> lines = new ArrayList<>();
-        for (String k : new String[]{"abstract", "body_text"}) {
+        for (String k : new String[]{
+                //"abstract", this field is typically pretty bad; better to grab abstract from metadata csv
+                "body_text"}) {
             JsonArray arr = root.getAsJsonObject().get(k).getAsJsonArray();
             for (JsonElement item : arr) {
                 String txt = item.getAsJsonObject().get("text").getAsString();
@@ -126,7 +128,9 @@ public class JsonAndTableToRhapsodeCollection {
         metadata.set("license", pubMetadata.license);
         metadata.set("source_x", pubMetadata.sourcex);
         metadata.set("sha", pubMetadata.sha);
-        metadata.set(AbstractRecursiveParserWrapperHandler.TIKA_CONTENT, pubMetadata.content);
+        metadata.set(AbstractRecursiveParserWrapperHandler.TIKA_CONTENT,
+                pubMetadata.abstrct+"\n\n"+
+                pubMetadata.content);
         metadata.set(TikaCoreProperties.CREATED, pubMetadata.publish_time);
         metadata.set(Metadata.CONTENT_TYPE, "text/plain");
         metadata.set("resourceName", txtFile.getFileName().toString());
@@ -158,6 +162,7 @@ public class JsonAndTableToRhapsodeCollection {
                     m.license = r.get("license");
                     m.authors = r.get("authors");
                     m.journal = r.get("journal");
+                    m.publish_time = r.get("publish_time");
                     m.collection = r.get("full_text_file");
                     if (StringUtils.isAllBlank(m.collection)) {
                         m.collection = "no_content";
