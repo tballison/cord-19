@@ -84,7 +84,6 @@ public class JsonAndTableToRhapsodeCollection {
             JsonArray arr = root.getAsJsonObject().get(k).getAsJsonArray();
             for (JsonElement item : arr) {
                 String txt = item.getAsJsonObject().get("text").getAsString();
-                //txt = NON_ASCII_REMOVER.matcher(txt).replaceAll(" ");
                 lines.add(txt + "\n");
             }
             lines.add("\n");

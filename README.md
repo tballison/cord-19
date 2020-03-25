@@ -1,6 +1,19 @@
 Quick-n-dirty repo to preprocess CORD-19 data to format it for rhapsode.
 
-See search application here: http://162.242.228.174:8092/rhapsode/basic/
+Full citation for the data:
+COVID-19 Open Research Dataset (CORD-19). 2020. 
+Version 2020-03-20. 
+Retrieved from https://pages.semanticscholar.org/coronavirus-research. 
+Accessed 2020-03-23. doi:10.5281/zenodo.3715506
+
+Data links:
+ * https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-20/comm_use_subset.tar.gz
+ * https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-20/noncomm_use_subset.tar.gz
+ * https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-20/custom_license.tar.gz
+ * https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-20/biorxiv_medrxiv.tar.gz
+ * https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-20/metadata.csv
+
+See search application here: https://rhapsode.covid19data.space/rhapsode/
 
 As is immediately obvious, the application was not built by an UI designer, 
 but rather only to prove the capabilities of concordance and cooccurrence search
