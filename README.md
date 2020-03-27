@@ -29,7 +29,7 @@ And vespa.ai:
 https://cord19.vespa.ai/
 
 Relevant links:
-https://twitter.com/mikemccand/status/1241682550969397249?s=20
-https://www.infoworld.com/article/3533269/kaggle-calls-data-scientists-to-action-on-covid-19.html
-https://registry.opendata.aws/cord-19/
-https://www.linkedin.com/pulse/join-fight-against-coronavirus-covid-19-mike-honey
+ * https://twitter.com/mikemccand/status/1241682550969397249?s=20
+ * https://www.infoworld.com/article/3533269/kaggle-calls-data-scientists-to-action-on-covid-19.html
+ * https://registry.opendata.aws/cord-19/
+ * https://www.linkedin.com/pulse/join-fight-against-coronavirus-covid-19-mike-honey
