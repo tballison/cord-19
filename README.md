@@ -25,6 +25,9 @@ See also Jimmy Lin and team's Anserini:
 
 https://twitter.com/lintool/status/1241881933031841800?s=20
 
+And vespa.ai:
+https://cord19.vespa.ai/
+
 Relevant links:
 https://twitter.com/mikemccand/status/1241682550969397249?s=20
 https://www.infoworld.com/article/3533269/kaggle-calls-data-scientists-to-action-on-covid-19.html
