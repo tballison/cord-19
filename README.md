@@ -21,12 +21,11 @@ along with some other capabilities.  See also LUCENE-5205...
 
 The source code for the search application is here: https://github.com/tballison/rhapsode
 
-See also Jimmy Lin and team's Anserini:
-
-https://twitter.com/lintool/status/1241881933031841800?s=20
-
-And vespa.ai:
-https://cord19.vespa.ai/
+Check out these other search engines for the CORD-19 data:
+ * https://app.sketchengine.eu/#dashboard?corpname=preloaded%2Fcovid19 (https://twitter.com/SketchEngine/status/1243228736490803205?s=20)
+ * https://www.covidsearch.io/ (https://twitter.com/lintool/status/1241881933031841800?s=20)
+ * http://covidseer.ist.psu.edu/
+ * https://cord19.vespa.ai/
 
 Relevant links:
  * https://twitter.com/mikemccand/status/1241682550969397249?s=20
